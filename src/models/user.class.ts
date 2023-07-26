@@ -12,9 +12,9 @@ export class User {
         this.lastName = obj ? obj.lastName : '';
         this.birthDate = obj ? obj.birthDate : '';
         this.address = obj ? obj.address : '';
-        this.no = obj ? obj.no : '';
+        this.no = obj ? obj.no : 0;
         this.city = obj ? obj.city : '';
-        this.zipCode = obj ? obj.zipCode : '';
+        this.zipCode = obj ? obj.zipCode : 0;
     }
 
     public toJSON() {
