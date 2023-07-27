@@ -2,55 +2,66 @@
     height: 100vh;
 }
 
-.menu-icon{
+.menu-icon {
     cursor: pointer;
 }
 
-.sidenav{
-    width:300px;
+.sidenav {
+    width: 300px;
 }
 
-.sidenav-ul /* entspricht .menu-items */{
+.sidenav-ul
+
+/* entspricht .menu-items */
+    {
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 
-    li{
-        padding-left:16px;
-        padding-right:16px;
-        height:48px;
+    li {
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 48px;
         display: flex;
         align-items: center;
         cursor: pointer;
 
-        &:hover{
-            background-color: rgba(0,0,0,0.04);
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
         }
 
-        &:focus{
+        &:focus {
             outline: none;
         }
 
-        mat-icon{
-            margin-right:16px;
+        mat-icon {
+            margin-right: 16px;
         }
     }
 }
 
-.logo-container{
-    border-bottom: 1px solid rgba(0,0,0,0.04);
+.logo-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     min-height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .logo-img {
+        width: 192px;
+        object-fit: cover;
+    }
 }
 
-mat-toolbar, mat-toolbar-row{
+mat-toolbar,
+mat-toolbar-row {
     min-height: 56px;
     height: 56px;
 }
 
-.router-container{
+.router-container {
+    // Hier befinden sich alle Apps drin
     padding-left: 56px;
+    padding-right: 56px;
     padding-top: 16px;
 }

@@ -1,5 +1,54 @@
-.add-user-btn{
+h2 {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.add-user-btn {
     position: absolute;
-    right:56px;
-    bottom:56px;
+    right: 56px;
+    bottom: 56px;
+}
+
+.user-table {
+
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    tr {
+        // table row
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &:first-child {
+            cursor: unset;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.03);
+
+            &:first-child {
+                background-color: unset;
+            }
+        }
+
+        td {
+            // table data/content
+            height: 48px;
+            color: rgba(0, 0, 0, 0.4);
+            padding-left: 16px;
+        }
+
+        th {
+            // table title
+            color: rgba(0, 0, 0, 0.4);
+            padding-left: 16px;
+        }
+    }
+
+
+
 }
