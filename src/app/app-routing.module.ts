@@ -6,11 +6,11 @@ import { DialogAddUserComponent } from './dialog-add-user/dialog-add-user.compon
 
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent },
   // { path: 'users/:id', component: DialogAddUserComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'user', component: UserComponent }
-  
+
 ];
 
 @NgModule({

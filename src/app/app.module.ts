@@ -56,7 +56,7 @@ import { MatCardModule } from '@angular/material/card';
     MatProgressBarModule,
     MatCardModule
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent],
 
 })
