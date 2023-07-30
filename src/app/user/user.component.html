@@ -1,19 +1,20 @@
 <mat-card>
     <mat-card-content>
-        <h2>Registered Users</h2>
+        <h2>Registered Users</h2><br>
     </mat-card-content>
     <table class="user-table">
         <tr>
             <th>Name</th>
             <th>E-Mail</th>
             <th>City</th>
+            <th>User ID</th>
         </tr>
-        <tr *ngFor="let user of users">
-            <td>{{ this.user.firstName }} {{ this.user.lastName }} {{ this.user.address }}
-                {{ this.user.no }} {{ this.user.city }} {{ this.user.zipCode }} {{ this.user.birthDate }}
+        <tr *ngFor="let user of allUsers" [routerLink]="['/users', user.userID]">
+            <td>{{ this.user.firstName }} {{ this.user.lastName }} 
             </td>
-            <td></td>
-            <td>3</td>
+            <td>{{ this.user.email }}</td>
+            <td>{{ this.user.zipCode }} {{ this.user.city }}</td>
+            <td>{{ this.user.userID }}</td>
         </tr>
     </table>
 </mat-card>
