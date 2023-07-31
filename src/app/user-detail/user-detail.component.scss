@@ -1,0 +1,48 @@
+$margin-left: 32px;
+
+.user-detail-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: unset;
+    min-height: 400px;
+    // background-color: rgba(99, 184, 255, 0.2);
+    background-color: rgba(63, 81, 181, 0.3);
+    color: white;
+
+    img.avatar {
+        margin-left: $margin-left;
+        margin-bottom: 15px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 100%;
+    }
+
+    .profile-details {
+        height: 100px;
+        margin-left: 32px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 20px;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.user-detail-address {
+    .user-detail-title {
+        margin-left: -8px;
+        padding-left: unset;
+    }
+
+    .user-detail-content {
+        margin-left: $margin-left;
+        margin-top: -24px;
+    }
+
+}
