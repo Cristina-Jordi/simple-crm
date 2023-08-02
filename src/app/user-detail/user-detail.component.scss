@@ -5,9 +5,9 @@ $margin-left: 32px;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: unset;
-    min-height: 400px;
+    min-height: 245px;
     // background-color: rgba(99, 184, 255, 0.2);
-    background-color: rgba(63, 81, 181, 0.3);
+    background-color: rgba(63, 81, 181, 0.5);
     color: white;
 
     img.avatar {
@@ -32,9 +32,22 @@ $margin-left: 32px;
             margin-bottom: 0;
         }
     }
+
+    .three-dots-icon-name {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+
+        &:hover {
+            background-color: rgba(63, 81, 181, 0.1);
+        }
+    }
 }
 
 .user-detail-address {
+    height: 180px;
+    padding-top: 52px;
+
     .user-detail-title {
         margin-left: -8px;
         padding-left: unset;
@@ -45,4 +58,13 @@ $margin-left: 32px;
         margin-top: -24px;
     }
 
+    .three-dots-icon-address {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+
+        &:hover {
+            background-color: rgba(63, 81, 181, 0.1);
+        }
+    }
 }
