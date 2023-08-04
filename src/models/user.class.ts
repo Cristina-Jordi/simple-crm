@@ -4,9 +4,9 @@ export class User {
     email: string;
     birthDate: number;
     address: string;
-    no: number;
+    no: string;
     city: string;
-    zipCode: number;
+    zipCode: string;
     userID?: string;
 
     constructor(obj?: any) {
@@ -15,9 +15,9 @@ export class User {
         this.email = obj ? obj.email : '';
         this.birthDate = obj ? obj.birthDate : '';
         this.address = obj ? obj.address : '';
-        this.no = obj ? obj.no : 0;
+        this.no = obj ? obj.no : '';
         this.city = obj ? obj.city : '';
-        this.zipCode = obj ? obj.zipCode : 0;
+        this.zipCode = obj ? obj.zipCode : '';
         this.userID = obj ? obj.userID : '';
     }
 

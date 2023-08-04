@@ -1,10 +1,21 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
 
- .form-margin-right {
-     margin-right: 16px;
- }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
- .full-width{
-    width:100%;
- }
+.form-margin-right {
+    margin-right: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+mat-form-field {
+    padding-top: 5px;
+}

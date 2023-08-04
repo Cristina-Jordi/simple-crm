@@ -8,13 +8,13 @@ import { User } from 'src/models/user.class';
   styleUrls: ['./dialog-edit-header.component.scss']
 })
 export class DialogEditHeaderComponent {
-  user = new User();
+  user!: User;
   birthDate!: Date;
   loading = false;  // Progress-bar set false by default
 
-  constructor(public dialogRef: MatDialogRef<DialogEditHeaderComponent>){}
+  constructor(public dialogRef: MatDialogRef<DialogEditHeaderComponent>) { }
 
-  saveChanges(){
+  saveChanges() {
 
   }
 

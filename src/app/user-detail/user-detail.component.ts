@@ -14,7 +14,7 @@ import { DialogEditHeaderComponent } from '../dialog-edit-header/dialog-edit-hea
 })
 export class UserDetailComponent implements OnInit {
   userId: any;
-  users: User[] = [];
+  user: User = new User();
 
   constructor(public dialog: MatDialog, private route: ActivatedRoute, private firestore: Firestore) { }
 
@@ -30,11 +30,10 @@ export class UserDetailComponent implements OnInit {
     const userRef = doc(this.firestore, 'users', this.userId);
 
     const unsubscribe = onSnapshot(userRef, (docSnapshot) => {
-      if(docSnapshot.exists()){
-        const user = docSnapshot.data() as User;
-        console.log('Selected User:', user);
-        this.users.push(user);
-      }else{
+      if (docSnapshot.exists()) {
+        this.user = docSnapshot.data() as User;
+        console.log('Selected User:', this.user);
+      } else {
         console.log('User not found');
       }
     }, (error) => {
@@ -43,10 +42,12 @@ export class UserDetailComponent implements OnInit {
   }
 
   editHeaderDetail() {
-    this.dialog.open(DialogEditHeaderComponent);
+    const dialog = this.dialog.open(DialogEditHeaderComponent);
+    dialog.componentInstance.user = this.user;
   }
 
-  editAddressDetail(){
-    this.dialog.open(DialogEditAddressComponent);
+  editAddressDetail() {
+    const dialog = this.dialog.open(DialogEditAddressComponent);
+    dialog.componentInstance.user = this.user;
   }
 }

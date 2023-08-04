@@ -1,6 +1,6 @@
 
 <h2>user-detail works!</h2>
-<mat-card class="user-detail-header" *ngFor="let user of users">
+<mat-card class="user-detail-header">
     <button class="three-dots-icon-name" mat-icon-button matTooltip="Edit User Details" (click)="editHeaderDetail()"
         matTooltipPosition="below"><mat-icon>more_vert</mat-icon></button>
     <!-- <mat-menu #headerMenu="matMenu">
@@ -14,7 +14,7 @@
     </div>
 </mat-card>
 
-<mat-card class="user-detail-address" *ngFor="let user of users">
+<mat-card class="user-detail-address">
     <button class="three-dots-icon-address" mat-icon-button matTooltip="Edit Address Details" (click)="editAddressDetail()"
         matTooltipPosition="below" ><mat-icon>more_vert</mat-icon></button>
 
