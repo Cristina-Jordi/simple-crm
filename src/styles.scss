@@ -19,3 +19,10 @@ body {
 mat-form-field {
     padding-top: 5px;
 }
+
+mat-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
